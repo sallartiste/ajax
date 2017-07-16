@@ -19,10 +19,24 @@ function go(){
     var leXhr = getXhr();
     leXhr.onreadystatechange = function(){
         if(leXhr.readyState == 4){
-            document.getElementById("root").innerHTML = leXhr.responseText;
+            var Jstext = JSON.parse(leXhr.responseText);
+            document.getElementById("root").innerHTML = Jstext.email.subject;
+
             //alert(leXhr.responseText);
         }
     }
-    leXhr.open('GET', "texte.txt", true);
+    //leXhr.open('GET', "texte.txt", true);
+    leXhr.open("GET", "popo.json", true);
     leXhr.send(null);
 }
+
+
+    var xhrApi = getXhr();
+    xhrApi.onreadystatechange = function(){
+        if(xhrApi.readyState == 4){
+            var pooApi = JSON.parse(xhrApi.responseText);
+            document.getElementById("api").innerHTML = pooApi.time;
+        }
+    }
+    xhrApi.open("GET", "http://time.jsontest.com/", true);
+    xhrApi.send();
