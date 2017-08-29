@@ -1,9 +1,10 @@
-1. Introduction
-Une société de transport aérien décide de repenser l'implantation de son système d'information en évoluant d'une approche fichiers vers une approche BD relationnelle. Pour mener à bien cette opération, la direction informatique de l'entreprise adopte une démarche en deux phases : une première phase dédiée à la conception des données et des traitements, et une seconde phase consacrée à l'implantation des données et des traitements à l'aide du SGBD relationnel retenu.
+# Exercice conception d'une base des données relationnelle #
 
-Le but de l'étude de cas proposée est de réaliser la phase de conception des données uniquement. La démarche préconisée est de représenter la réalité de l'entreprise en utilisant le modèle entité-association, étendu avec le concept de généralisation, avec la prise en compte des contraintes d'intégrité (en particulier les dépendances fonctionnelles). Le résultat de cette modélisation est constitué par un schéma conceptuel au format entité/association étendu. Ce schéma conceptuel doit alors être transformé en un schéma relationnel normalisé équivalent.
+1. __Introduction__
 
-2. Description du système d'information
+Une société de transport aérien décide de repenser l'implantation de son système d'information, elle souhaite passer des   fichiers vers une approche BD relationnelle. Pour mener à bien cette opération, la direction informatique de l'entreprise adopte une démarche en deux phases : une première phase dédiée à la conception des données et des traitements, et une seconde phase consacrée à l'implantation des données et des traitements à l'aide du SGBD relationnel retenu.
+
+2. __Description du système d'information__
 
 Pour vous permettre de construire le schéma conceptuel de la base, nous donnons maintenant la description des informations à gérer au sein de l'entreprise de transport aérien.
 
@@ -24,3 +25,7 @@ Pour chaque vol enregistré, on suppose qu'il existe un départ tous les jours p
 Un passager est identifié par un numéro. Il possède un nom, un prénom, une adresse, une profession et une banque. Il effectue des réservations qui donnent lieu à l'émission de billets.
 
 Un billet est repéré par un numéro. Il comporte une date d'émission et un prix. Un billet référence un départ et un seul. Pour simplifier, on suppose qu'un billet concerne un client et un seul.
+
+Voilà, à l'aide de __Workbench ou sur papier__ modeliser le schéma rélationnel de cette BD et d'etablir les clefs( primaires ou uniques).
+
+Coooool
